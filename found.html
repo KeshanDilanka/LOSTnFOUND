@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Found Items</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Report Found Items</h1>
+    <nav class="navbar">
+      <a href="index.html"><button>Home</button></a>
+      <a href="lost.html"><button>Report Lost</button></a>
+      <a href="found.html"><button>Report Found</button> </a>
+      <a href="contact.html"><button>Contact</button></a>
+      <a href="signup.html"><button>Sign Up</button></a>    </nav>
+  </header>
+
+  <main>
+    <h2>Report a Found Item</h2>
+    <input type="text" id="foundItemName" placeholder="Item Name">
+    <input type="text" id="foundReporter" placeholder="Your Name">
+    <select id="foundCategory">
+      <option value="">Select Category</option>
+      <option>Electronics</option>
+      <option>Accessories</option>
+      <option>Documents</option>
+    </select>
+    <textarea id="foundDesc" placeholder="Description"></textarea>
+    <button onclick="reportFoundItem()">Submit</button>
+
+    <h2>Found Items</h2>
+    <select id="foundFilter" onchange="filterFoundItems()">
+      <option value="">All Categories</option>
+      <option>Electronics</option>
+      <option>Accessories</option>
+      <option>Documents</option>
+    </select>
+    <div id="foundList" class="card-container"></div>
+  </main>
+
+  <footer>&copy; 2025 Lost & Found</footer>
+  <script src="script.js"></script>
+</body>
+</html>

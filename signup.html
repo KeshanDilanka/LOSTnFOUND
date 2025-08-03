@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sign Up</h1>
+  <nav class="navbar">
+    <a href="index.html"><button>Home</button></a>
+    <a href="lost.html"><button>Report Lost</button></a>
+    <a href="found.html"><button>Report Found</button> </a>
+    <a href="contact.html"><button>Contact</button></a>
+    <a href="signup.html"><button>Sign Up</button></a>  </nav>
+</header>
+
+<main>
+  <section class="features">
+  <form id="signupForm" onsubmit="return validateSignupForm()">
+    <input type="text" id="username" placeholder="Username (3-15 letters)">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="city" placeholder="City (only letters)">
+    <input type="password" id="password" placeholder="Password (min 6 chars)">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <button type="submit">Sign Up</button>
+  </form>
+  </section>
+</main>
+
+<footer>&copy; 2025 Lost & Found System</footer>
+<script src="script.js"></script>
+</body>
+</html>
